@@ -1,0 +1,9 @@
+bin
+target
+download
+DownloadUnzip
+doc
+.idea
+*.iml
+*.log
+.DS_Store
