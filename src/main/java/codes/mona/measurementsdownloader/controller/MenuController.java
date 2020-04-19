@@ -43,17 +43,17 @@ public class MenuController {
 				.or(model.taskInProgressProperty()));
 		queryButton.disableProperty().bind(queryBinding);
 
-		downloadButton.setOnAction(e -> {
-			new Thread(new DownloadTask(model)).start();
-		});
-		downloadAndParseButton.setOnAction(e -> {
-			new Thread(new DownloadAndImportTask(model)).start();
-		});
-		parseButton.setOnAction(e -> {
-			new Thread(new ParseTask(model)).start();
-		});
-		queryButton.setOnAction(e -> {
-			new Thread(new QueryTask(model)).start();
-		});
+		downloadButton.setOnAction(e ->
+			new Thread(new DownloadTask(model)).start()
+		);
+		downloadAndParseButton.setOnAction(e ->
+			new Thread(new DownloadAndImportTask(model)).start()
+		);
+		parseButton.setOnAction(e ->
+			new Thread(new ParseTask(model)).start()
+		);
+		queryButton.setOnAction(e ->
+			new Thread(new QueryTask(model)).start()
+		);
 	}
 }
