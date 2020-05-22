@@ -1,7 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>codes.mona.measurementsdownloader</groupId>
 	<artifactId>MeasurementsDownloader</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -14,6 +16,7 @@
 		<junit.jupiter.version>5.3.0</junit.jupiter.version>
 		<junit-platform.version>1.2.0</junit-platform.version>
 	</properties>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -25,6 +28,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
@@ -98,4 +102,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
